@@ -96,7 +96,30 @@ The output `.osm` file will be created in the working directory under `databases
 
 ---
 
+## Contributing
+
+Contributions are welcome!
+If you have suggestions for improvements, bug fixes, or new features, feel free to open an issue or submit a pull request.
+
+Thank you for helping improve this project!
+
+---
+
+## To-Do / Next Steps
+
+- [ ] **Handle long ways**
+Split ways with more than 2,000 points into two or more ways due to OSM upload limitations.
+If the original geometry is a polygon, convert it into a multipolygon relation with the new ways as members.
+
+- [ ] **Support border deduplication via multipolygons**
+Add an option to convert overlapping border ways into multipolygons (way -> relation).
+These multipolygons should share the common border segment as a member to reduce duplication and ensure OSM consistency.
+
+---
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+By contributing to this project, you agree that your contributions may be re-licensed under a different open-source license in the future, if necessary for the project's evolution or broader adoption.
+Suggestions for changing the license are welcome, as long as they are accompanied by clear reasoning or arguments.
 
